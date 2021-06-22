@@ -1,23 +1,56 @@
 Dependencies for Project 'Fire_FreeRTOS', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6140000::V6.14::ARMCLANG
-F (..\User\main.c)(0x60CB36A1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -fsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../freertos/Source/include-I./RTE/_Target_1-IE:/keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IE:/keil_v5/Arm/Packs/Keil/STM32G0xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32G031xx -D_RTE_-o ./objects/main.o -MD)
-I (..\freertos\Source\include\list.h)(0x60CB2716)
-I (..\freertos\Source\include\portmacro.h)(0x60CB1250)
+F (..\User\main.c)(0x60D137AC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -fsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../freertos/Source/include -I ../User -I ../freertos/Source/portable/RVDS/ARM_CM3-I./RTE/_Target_1-IE:/keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IE:/keil_v5/Arm/Packs/Keil/STM32G0xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32G031xx -D_RTE_-o ./objects/main.o -MD)
+I (..\freertos\Source\include\FreeRTOS.h)(0x60D138BE)
+I (..\freertos\Source\include\list.h)(0x60D138F0)
+I (..\freertos\Source\include\portmacro.h)(0x60D138C1)
 I (E:\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
 I (E:\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5ED60BE4)
-I (..\freertos\Source\include\FreeRTOSConfig.h)(0x60CB1231)
-F (..\freertos\Source\include\list.h)(0x60CB2716)()
-F (..\freertos\list.c)(0x60CB11C0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -fsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../freertos/Source/include-I./RTE/_Target_1-IE:/keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IE:/keil_v5/Arm/Packs/Keil/STM32G0xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32G031xx -D_RTE_-o ./objects/list.o -MD)
-I (..\freertos\Source\include\list.h)(0x60CB2716)
-I (..\freertos\Source\include\portmacro.h)(0x60CB1250)
+I (..\freertos\Source\include\FreeRTOSConfig.h)(0x60D09262)
+I (..\freertos\Source\include\projdefs.h)(0x60CC14D2)
+I (..\freertos\Source\include\portable.h)(0x60D137E1)
+I (..\freertos\Source\include\task.h)(0x60D13927)
+F (..\freertos\Source\include\list.h)(0x60D138F0)()
+F (..\freertos\list.c)(0x60D13601)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -fsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../freertos/Source/include -I ../User -I ../freertos/Source/portable/RVDS/ARM_CM3-I./RTE/_Target_1-IE:/keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IE:/keil_v5/Arm/Packs/Keil/STM32G0xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32G031xx -D_RTE_-o ./objects/list.o -MD)
+I (..\freertos\Source\include\FreeRTOS.h)(0x60D138BE)
+I (..\freertos\Source\include\list.h)(0x60D138F0)
+I (..\freertos\Source\include\portmacro.h)(0x60D138C1)
 I (E:\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
 I (E:\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5ED60BE4)
-I (..\freertos\Source\include\FreeRTOSConfig.h)(0x60CB1231)
-F (..\freertos\Source\include\portmacro.h)(0x60CB1250)()
-F (..\freertos\Source\include\FreeRTOSConfig.h)(0x60CB1231)()
+I (..\freertos\Source\include\FreeRTOSConfig.h)(0x60D09262)
+I (..\freertos\Source\include\projdefs.h)(0x60CC14D2)
+I (..\freertos\Source\include\portable.h)(0x60D137E1)
+I (E:\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5ED60BE4)
+F (..\freertos\Source\include\portmacro.h)(0x60D138C1)()
+F (..\freertos\Source\include\FreeRTOSConfig.h)(0x60D09262)()
+F (..\freertos\Source\include\task.h)(0x60D13927)()
+F (..\freertos\Source\include\FreeRTOS.h)(0x60D138BE)()
+F (..\freertos\task.c)(0x60D1373D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -fsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../freertos/Source/include -I ../User -I ../freertos/Source/portable/RVDS/ARM_CM3-I./RTE/_Target_1-IE:/keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IE:/keil_v5/Arm/Packs/Keil/STM32G0xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32G031xx -D_RTE_-o ./objects/task.o -MD)
+I (..\freertos\Source\include\FreeRTOS.h)(0x60D138BE)
+I (..\freertos\Source\include\list.h)(0x60D138F0)
+I (..\freertos\Source\include\portmacro.h)(0x60D138C1)
+I (E:\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (E:\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5ED60BE4)
+I (..\freertos\Source\include\FreeRTOSConfig.h)(0x60D09262)
+I (..\freertos\Source\include\projdefs.h)(0x60CC14D2)
+I (..\freertos\Source\include\portable.h)(0x60D137E1)
+I (..\freertos\Source\include\task.h)(0x60D13927)
+F (..\freertos\Source\include\projdefs.h)(0x60CC14D2)()
+F (..\freertos\Source\portable\RVDS\ARM_CM3\port.c)(0x60D1388D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -fsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../freertos/Source/include -I ../User -I ../freertos/Source/portable/RVDS/ARM_CM3-I./RTE/_Target_1-IE:/keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IE:/keil_v5/Arm/Packs/Keil/STM32G0xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32G031xx -D_RTE_-o ./objects/port.o -MD)
+I (..\freertos\Source\include\FreeRTOS.h)(0x60D138BE)
+I (..\freertos\Source\include\list.h)(0x60D138F0)
+I (..\freertos\Source\include\portmacro.h)(0x60D138C1)
+I (E:\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED60BE4)
+I (E:\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5ED60BE4)
+I (..\freertos\Source\include\FreeRTOSConfig.h)(0x60D09262)
+I (..\freertos\Source\include\projdefs.h)(0x60CC14D2)
+I (..\freertos\Source\include\portable.h)(0x60D137E1)
+I (..\freertos\Source\include\task.h)(0x60D13927)
+F (..\freertos\Source\include\port.h)(0x60D13601)()
+F (..\freertos\Source\include\portable.h)(0x60D137E1)()
 F (..\Doc\readme.txt)(0x60CAE945)()
 F (RTE\Device\STM32G031K8Tx\startup_stm32g031xx.s)(0x5D310938)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto -c-gdwarf-3 -I ../freertos/Source/include-I./RTE/_Target_1-IE:/keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IE:/keil_v5/Arm/Packs/Keil/STM32G0xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 531" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32G031xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32g031xx.o)
-F (RTE\Device\STM32G031K8Tx\system_stm32g0xx.c)(0x5D310938)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -fsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../freertos/Source/include-I./RTE/_Target_1-IE:/keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IE:/keil_v5/Arm/Packs/Keil/STM32G0xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32G031xx -D_RTE_-o ./objects/system_stm32g0xx.o -MD)
+F (RTE\Device\STM32G031K8Tx\system_stm32g0xx.c)(0x5D310938)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -fsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../freertos/Source/include -I ../User -I ../freertos/Source/portable/RVDS/ARM_CM3-I./RTE/_Target_1-IE:/keil_v5/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IE:/keil_v5/Arm/Packs/Keil/STM32G0xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32G031xx -D_RTE_-o ./objects/system_stm32g0xx.o -MD)
 I (E:\keil_v5\Arm\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h)(0x5D310938)
 I (E:\keil_v5\Arm\Packs\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g031xx.h)(0x5D310938)
 I (E:\keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8ED122)

@@ -22,40 +22,121 @@ Dialog DLL:      TARMCM1.DLL V1.14.2.0
  
 <h2>Project:</h2>
 D:\Cavin Code\FreeRTOS°™°™SoftwareSimulater\Project\Fire_FreeRTOS.uvprojx
-Project File Date:  06/17/2021
+Project File Date:  06/22/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.14', folder: 'E:\keil_v5\ARM\ARMCLANG\Bin'
-Build target 'Target 1'
-../User/main.c(15): warning: no previous extern declaration for non-static variable 'List_Test' [-Wmissing-variable-declarations]
-struct xLIST        List_Test;
-                    ^
-../User/main.c(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-struct xLIST        List_Test;
-^
-../User/main.c(18): warning: no previous extern declaration for non-static variable 'List_Item1' [-Wmissing-variable-declarations]
-struct xLIST_ITEM   List_Item1;
-                    ^
-../User/main.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-struct xLIST_ITEM   List_Item1;
-^
-../User/main.c(19): warning: no previous extern declaration for non-static variable 'List_Item2' [-Wmissing-variable-declarations]
-struct xLIST_ITEM   List_Item2;
-                    ^
-../User/main.c(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-struct xLIST_ITEM   List_Item2;
-^
-../User/main.c(20): warning: no previous extern declaration for non-static variable 'List_Item3' [-Wmissing-variable-declarations]
-struct xLIST_ITEM   List_Item3;
-                    ^
-../User/main.c(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-struct xLIST_ITEM   List_Item3;
-^
+Rebuild target 'Target 1'
+../freertos/Source/portable/RVDS/ARM_CM3/port.c(15): warning: In file included from...
+../freertos/Source/include/FreeRTOS.h(17): warning: In file included from...
+../freertos/Source/include/list.h(18): warning: In file included from...
+../freertos/Source/include/portmacro.h(54): warning: backslash and newline separated by space [-Wbackslash-newline-escape]
+#define portYIELD()                             \               
+                                                 ^
+../freertos/Source/portable/RVDS/ARM_CM3/port.c(76): warning: '/*' within block comment [-Wcomment]
+//*********************************************************************
+ ^
+../freertos/Source/portable/RVDS/ARM_CM3/port.c(77): warning: '/*' within block comment [-Wcomment]
+//*                      ÂêØÂä®Ë∞ÉÂ∫¶Âô®
+ ^
+../freertos/Source/portable/RVDS/ARM_CM3/port.c(78): warning: '/*' within block comment [-Wcomment]
+//*********************************************************************
+ ^
 4 warnings generated.
+compiling port.c...
+../freertos/task.c(15): warning: In file included from...
+../freertos/Source/include/FreeRTOS.h(17): warning: In file included from...
+../freertos/Source/include/list.h(18): warning: In file included from...
+../freertos/Source/include/portmacro.h(54): warning: backslash and newline separated by space [-Wbackslash-newline-escape]
+#define portYIELD()                             \               
+                                                 ^
+1 warning generated.
+compiling task.c...
+../User/main.c(26): warning: In file included from...
+../freertos/Source/include/FreeRTOS.h(17): warning: In file included from...
+../freertos/Source/include/list.h(18): warning: In file included from...
+../freertos/Source/include/portmacro.h(54): warning: backslash and newline separated by space [-Wbackslash-newline-escape]
+#define portYIELD()                             \               
+                                                 ^
+../User/main.c(45): error: unknown type name 'TaskHandle_t'; did you mean 'Task_Handle_t'?
+TaskHandle_t Task1_Handle;
+^~~~~~~~~~~~
+Task_Handle_t
+../freertos/Source/include\task.h(25): note: 'Task_Handle_t' declared here
+typedef void * Task_Handle_t;
+               ^
+../User/main.c(50): error: unknown type name 'TaskHandle_t'; did you mean 'Task_Handle_t'?
+TaskHandle_t Task2_Handle;
+^~~~~~~~~~~~
+Task_Handle_t
+../freertos/Source/include\task.h(25): note: 'Task_Handle_t' declared here
+typedef void * Task_Handle_t;
+               ^
+../User/main.c(132): error: indirection requires pointer operand ('uint32_t' (aka 'unsigned int') invalid)
+        taskYIELD();
+        ^~~~~~~~~~~
+../freertos/Source/include\task.h(27): note: expanded from macro 'taskYIELD'
+#define taskYIELD()             portYIELD()
+                                ^~~~~~~~~~~
+../freertos/Source/include/portmacro.h(57): note: expanded from macro 'portYIELD'
+    portNVIC_INT_CTRL_REG = portNVIC_PENDSVSET_BIT; \
+    ^~~~~~~~~~~~~~~~~~~~~
+../freertos/Source/include/portmacro.h(49): note: expanded from macro 'portNVIC_INT_CTRL_REG'
+#define portNVIC_INT_CTRL_REG       ( *(( volatile uint32_t )0xe000ed04) )
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../User/main.c(132): warning: implicit declaration of function '__dsb' is invalid in C99 [-Wimplicit-function-declaration]
+../freertos/Source/include\task.h(27): note: expanded from macro 'taskYIELD'
+#define taskYIELD()             portYIELD()
+                                ^
+../freertos/Source/include/portmacro.h(58): note: expanded from macro 'portYIELD'
+    __dsb( portSY_FULL_READ_WRITE );                \
+    ^
+../User/main.c(132): warning: implicit declaration of function '__isb' is invalid in C99 [-Wimplicit-function-declaration]
+../freertos/Source/include\task.h(27): note: expanded from macro 'taskYIELD'
+#define taskYIELD()             portYIELD()
+                                ^
+../freertos/Source/include/portmacro.h(59): note: expanded from macro 'portYIELD'
+    __isb( portSY_FULL_READ_WRITE );                \
+    ^
+../User/main.c(147): error: indirection requires pointer operand ('uint32_t' (aka 'unsigned int') invalid)
+        taskYIELD();
+        ^~~~~~~~~~~
+../freertos/Source/include\task.h(27): note: expanded from macro 'taskYIELD'
+#define taskYIELD()             portYIELD()
+                                ^~~~~~~~~~~
+../freertos/Source/include/portmacro.h(57): note: expanded from macro 'portYIELD'
+    portNVIC_INT_CTRL_REG = portNVIC_PENDSVSET_BIT; \
+    ^~~~~~~~~~~~~~~~~~~~~
+../freertos/Source/include/portmacro.h(49): note: expanded from macro 'portNVIC_INT_CTRL_REG'
+#define portNVIC_INT_CTRL_REG       ( *(( volatile uint32_t )0xe000ed04) )
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../User/main.c(147): warning: implicit declaration of function '__dsb' is invalid in C99 [-Wimplicit-function-declaration]
+../freertos/Source/include\task.h(27): note: expanded from macro 'taskYIELD'
+#define taskYIELD()             portYIELD()
+                                ^
+../freertos/Source/include/portmacro.h(58): note: expanded from macro 'portYIELD'
+    __dsb( portSY_FULL_READ_WRITE );                \
+    ^
+../User/main.c(147): warning: implicit declaration of function '__isb' is invalid in C99 [-Wimplicit-function-declaration]
+../freertos/Source/include\task.h(27): note: expanded from macro 'taskYIELD'
+#define taskYIELD()             portYIELD()
+                                ^
+../freertos/Source/include/portmacro.h(59): note: expanded from macro 'portYIELD'
+    __isb( portSY_FULL_READ_WRITE );                \
+    ^
+5 warnings and 4 errors generated.
 compiling main.c...
-linking...
-Program Size: Code=472 RO-data=208 RW-data=0 ZI-data=1712  
-".\Objects\Fire_FreeRTOS.axf" - 0 Error(s), 4 Warning(s).
+../freertos/list.c(15): warning: In file included from...
+../freertos/Source/include/FreeRTOS.h(17): warning: In file included from...
+../freertos/Source/include/list.h(18): warning: In file included from...
+../freertos/Source/include/portmacro.h(54): warning: backslash and newline separated by space [-Wbackslash-newline-escape]
+#define portYIELD()                             \               
+                                                 ^
+1 warning generated.
+compiling list.c...
+compiling system_stm32g0xx.c...
+assembling startup_stm32g031xx.s...
+".\Objects\Fire_FreeRTOS.axf" - 4 Error(s), 11 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -81,11 +162,12 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.4.0
 
    * Component: Keil::Device:Startup:1.3.0
+      Source file:   MDK\Device\Source\ARM\STM32G0x1_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
       Source file:   Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\arm\startup_stm32g031xx.s
       Source file:   Drivers\CMSIS\Device\ST\STM32G0xx\Source\Templates\system_stm32g0xx.c
-      Include file:  Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
-      Source file:   MDK\Device\Source\ARM\STM32G0x1_OPT.s
-Build Time Elapsed:  00:00:00
+Target not created.
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

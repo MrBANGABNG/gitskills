@@ -1,6 +1,8 @@
 --cpu Cortex-M0+
 ".\objects\main.o"
 ".\objects\list.o"
+".\objects\task.o"
+".\objects\port.o"
 ".\objects\startup_stm32g031xx.o"
 ".\objects\system_stm32g0xx.o"
 --strict --scatter ".\Objects\Fire_FreeRTOS.sct"
